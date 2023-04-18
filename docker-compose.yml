@@ -14,6 +14,8 @@ services:
       WORDPRESS_DB_USER: wordpress
       WORDPRESS_DB_PASSWORD: wordpress
       WORDPRESS_DB_NAME: wordpress_db
+      # ローカル環境でWordPress REST APIを使用するための設定(API使わないなら記述しなくてOK)
+      WP_ENVIRONMENT_TYPE: local
     volumes:
       - ./wordpress:/var/www/html
 
